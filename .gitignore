@@ -1,0 +1,14 @@
+# venv
+.venv/
+__pycache__/
+*.pyc
+
+# dataset (jangan pernah push)
+data/trashnet/raw/**/*
+!data/trashnet/raw/**/.gitkeep
+
+# model output
+models/model.pth
+
+# metrics & logs (opsional, boleh di-track tapi biasanya gak perlu)
+metrics/*
