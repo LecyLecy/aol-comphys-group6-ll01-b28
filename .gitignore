@@ -21,3 +21,20 @@ metrics/*
 !metrics/classification_report.json
 !metrics/confusion_matrix.png
 !metrics/train_log.csv
+
+# local scratch
+check.txt
+
+# logs
+metrics/train_log.csv
+
+# dataset (keep only .gitkeep placeholders)
+data/trashnet/raw/**/*
+!data/trashnet/raw/**/.gitkeep
+
+# downloaded zip/folders (if any)
+dataset-resized.zip
+data/dataset-resized.zip
+dataset-resized/
+data/dataset-resized/
+
