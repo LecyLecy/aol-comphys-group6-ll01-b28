@@ -1,0 +1,13 @@
+{
+  "best_val_acc": 0.833992095332843,
+  "model_name": "resnet18",
+  "image_size": 224,
+  "classes": [
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "trash"
+  ]
+}
