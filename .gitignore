@@ -7,8 +7,12 @@ __pycache__/
 data/trashnet/raw/**/*
 !data/trashnet/raw/**/.gitkeep
 
-# model output
+# model weights (jangan push, kecuali pakai Git LFS)
 models/model.pth
 
-# metrics & logs (opsional, boleh di-track tapi biasanya gak perlu)
+# metrics: ignore semua, tapi KEEP yang penting untuk laporan
 metrics/*
+!metrics/metrics.json
+!metrics/classification_report.json
+!metrics/confusion_matrix.png
+!metrics/train_log.csv
