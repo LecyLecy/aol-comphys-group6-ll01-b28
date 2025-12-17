@@ -11,7 +11,7 @@ MVP untuk tugas SDG 12 (Responsible Consumption and Production – Plastic Waste
 
 ---
 
-Download Git -> Download Python 3.11 -> Buat Folder -> Paste di cmd folder tersebut :
+Download Git -> Download Python 3.11 -> Buat Folder -> Paste di *POWER-SHELL* folder tersebut :
 
 ```bash
 mkdir AOL_Comphys_Run
