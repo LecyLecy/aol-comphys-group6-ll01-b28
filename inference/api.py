@@ -85,7 +85,13 @@ def predict_pil_ui(img: Image.Image,
     conf2 = top[1]["confidence"] if len(top) > 1 else 0.0
     margin = conf1 - conf2
 
-    needs_review = (conf1 < cfg.confidence_threshold) or (margin < cfg.margin_threshold)
+    # heuristic: common confusion pair in TrashNet
+    confusable_pairs = {("glass", "plastic"), ("plastic", "glass")}
+    top2_pair = (label1, top[1]["label"]) if len(top) > 1 else None
+    pair_confusable = top2_pair in confusable_pairs
+
+    needs_review = pair_confusable or (conf1 < cfg.confidence_threshold) or (margin < cfg.margin_threshold)
+
 
     return {
         "label": label1,
